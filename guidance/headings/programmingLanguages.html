@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+    body{
+        /* background-color: rgba(223, 142, 240, 0.39); */
+        background-color: blanchedalmond;   
+    }
+    .card-img-top{
+      height: 300px;
+      object-fit: cover;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #pad
+    {
+        padding: 20px 20px 20px 20px;
+    }
+    .card{
+      box-shadow: 3px 3px 10px 4px rgba(0, 0, 0, 0.829);
+    }
+    .card:hover
+    {
+        transform: scale(1.04);
+        border-color: black;
+    }
+</style>
+<script>
+    $(document).ready(function() {
+
+console.log("document is ready");
+  
+
+  $( ".card" ).hover(
+  function() {
+    $(this).addClass('shadow-lg').css('cursor', 'pointer'); 
+  }, function() {
+    $(this).removeClass('shadow-lg');
+  }
+);
+
+});
+</script>
+<body>
+  <script src="/javascript/search.js"></script>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Guide Me 😄</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="/headings/programmingLanguages.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Programming-languages
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/html/python.html" target="_blank" >Python</a>
+            <a class="dropdown-item" href="/html/java.html" target="_blank" >Java</a>
+            <a class="dropdown-item" href="/html/cpp.html" target="_blank" >Cpp</a>
+            <a class="dropdown-item" href="/html/c.html" target="_blank" >cprogramming</a>
+            <div class="dropdown-divider"></div>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          web-development
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/html/html.html" target="_blank" >Html</a>
+            <a class="dropdown-item" href="/html/css.html" target="_blank" >Css</a>
+            <a class="dropdown-item" href="/html/bootstrap.html" target="_blank" >Bootstrap</a>
+            <a class="dropdown-item" href="/html/javascript.html" target="_blank" >Javascript</a>
+            <a class="dropdown-item" href="/html/react.html" target="_blank" >React</a>
+            <a class="dropdown-item active" href="/html/angular.html" target="_blank"> Angular</a>
+            <hr>
+            <a class="dropdown-item" href="/html/nodejs.html" target="_blank" >NodeJs</a>
+            <a class="dropdown-item" href="/html/expressjs.html" target="_blank" >Express</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Cloud
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="/html/aws.html" target="_blank" >AWS(AmazonWebServices)</a>
+            <a class="dropdown-item" href="/html/gcp.html" target="_blank" >GCP</a>
+           
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="/html/networking.html" id="navbarDropdown">
+           Networking
+          </a>
+          
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" name="form" action="" onsubmit="fun()">
+        <input class="form-control mr-sm-2" name="search" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+    
+<br><br><br><br>
+    <div class="container" >
+        <div class="row">
+          <div id="pad" class=" col-sm-8 col-md-6 col-lg-4">
+             <div class="card " >
+                 <img class="card-img-top "  src="/images/cnew.jpeg" alt="Bologna">
+                   <div class="card-body">
+                        <h4 class="card-title">C</h4>
+                        <h6 class="card-subtitle mb-2 text-muted"></h6>
+                        <p class="card-text">Learn C by clicking on go </p>
+                        <br><br>
+                        <a href="" class="card-link">Go</a>
+                    
+                        <a href="#" class="card-link">Like</a>
+                   </div>
+               </div> 
+            </div>
+            <div id="pad" class="col-12 col-sm-8 col-md-6 col-lg-4">
+             <div class="card " >
+                <img class="card-img-top"  src="/images/cppnew.jpeg" alt="Bologna">
+                <div class="card-body">
+                  <h4 class="card-title">C++</h4>
+                  <h6 class="card-subtitle mb-2 text-muted"></h6>
+                  <p class="card-text">Learn C++ Course by clicking on go </p>
+                  <br><br>
+                  <a href="/html/cpp.html" class="card-link">Go</a>
+              
+                  <a href="#" class="card-link">Like</a>
+                </div>
+            </div>
+        </div>
+        <div id="pad" class="col-12 col-sm-8 col-md-6 col-lg-4">
+            <div class="card " >
+               <img class="card-img-top img-fluid"  src="/images/javanew.jpeg" alt="Bologna">
+               <div class="card-body">
+                 <h4 class="card-title">Java</h4>
+                 <h6 class="card-subtitle mb-2 text-muted"></h6>
+                 <p class="card-text">Learn Java course by clicking on go </p>
+                 <br><br>
+                 <a href="#" class="card-link">Go</a>
+             
+                 <a href="#" class="card-link">Like</a>
+               </div>
+           </div>
+       </div>
+        
+
+       
+
+       <div id="pad" class="col-12 col-sm-8 col-md-6 col-lg-4">
+        <div class="card" >
+           <img class="card-img-top"  src="/images/pythohnew.jpeg" alt="Bologna">
+           <div class="card-body">
+             <h4 class="card-title">Python</h4>
+             <h6 class="card-subtitle mb-2 text-muted"></h6>
+             <p class="card-text">Learn Python course by clicking on go </p>
+             <br><br>
+             <a href="#" class="card-link">Go</a>
+         
+             <a href="#" class="card-link">Like</a>
+           </div>
+       </div>
+   </div>
+
+    </div>
+
+<br><br><br><br><br>
+
+
+
+
+</body>
+</html>

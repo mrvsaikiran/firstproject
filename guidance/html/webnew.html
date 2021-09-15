@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<style>
+  @media   (max-width: 767px) and (min-width:176px) {
+    html {
+      justify-content: center;
+        margin: 0 auto;
+        float: none;
+        margin-bottom: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+}
+#heart
+{
+  background-color: violet;
+}
+ .bi-heart-fill
+ {
+
+  color:white;
+
+
+ }
+/* .card{
+    height: 50%;
+} */
+.card-img-top {
+ 
+    height: 300px;
+    object-fit: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+    body{
+
+  
+        /* background-color: rgba(223, 142, 240, 0.39); */
+        background-color: blanchedalmond;
+        
+    }
+    #pad
+    {
+        padding: 20px 20px 20px 20px;
+    }
+    
+    .card:hover
+    {
+        transform: scale(1.04);
+        border-color: black;
+    }
+
+ 
+</style>
+<script>
+    $(document).ready(function() {
+
+
+  
+
+  $( ".card" ).hover(
+  function() {
+    $(this).addClass('shadow-lg').css('cursor', 'pointer'); 
+  }, function() {
+    $(this).removeClass('shadow-lg');
+  }
+);
+
+});
+
+
+function toggle() {
+  // var element = document.querySelector('#heart');
+// var x = element.querySelectorAll('.bi-heart-fill');
+var element=document.getElementsByClassName("bi-heart-fill");
+
+
+  if (element[0].style.color === "") {
+    // x.style.color = "red";
+    element[0].style.color = "red";
+  } else {
+    // x.style.color = "white";
+    element[0].style.color = "white";
+  }
+}
+
+</script>
+<body>
+
+    <nav  class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+
+        <a class="navbar-brand" href="#">Guide me😄</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">route Maps</a>
+          </li>
+      
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Courses
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/html/webnew.html">Programming Languages</a>
+              <a class="dropdown-item" href="/headings/WebDevelopment.html">Web Development</a>
+              <a class="dropdown-item" href="/headings/cloud.html">Cloud</a>
+              <a class="dropdown-item" href="/html/networking.html">Networking</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <form class="form-inline" action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="bi-user"></i> Sign Up</a>
+            <i class="fas fa-cloud"></i>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="bi-sign-in"></span> Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><span class="bi-sign-in"></span> My Profile</a>
+          </li>
+        </ul>
+    </div>
+      </nav> 
+
+<br><br><br><br>
+
+    <div class="container" >
+        <div class="row">
+          <div id="pad" class=" col-sm-8 col-md-6 col-lg-4">
+             <div class="card " >
+              <img class="card-img-top img-fluid"  src="/images/cnew.jpeg" alt="C">
+                   <div class="card-body">
+                        <h4 class="card-title">C</h4>
+                        <h6 class="card-subtitle mb-2 text-muted"></h6>
+                        <p class="card-text">Learn C by clicking on go </p>
+                        <br><br>
+                        <a href="#" class="card-link">Go</a>
+                        <!-- <button type="button" id="heart" class="btn btn-primary" onclick="toggle()" ><i id="c" class="bi-heart-fill"></i> </button> -->
+                        <a href="#" class="card-link">Like</a>
+                   </div>
+               </div> 
+            </div>
+            <div id="pad" class="col-12 col-sm-8 col-md-6 col-lg-4">
+             <div class="card " >
+              <img class="card-img-top img-fluid"  src="/images/cppnew.jpeg" alt="CPP">
+                <div class="card-body">
+                  <h4 class="card-title">C++</h4>
+                  <h6 class="card-subtitle mb-2 text-muted"></h6>
+                  <p class="card-text">Learn C++ Course by clicking on go </p>
+                  <br><br>
+                  <a href="#" class="card-link">Go</a>
+
+                  
+
+                  <a href="#" class="card-link">Like</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="pad" class="col-12 col-sm-8 col-md-6 col-lg-4">
+            <div class="card " >
+              <img class="card-img-top img-fluid"  src="/images/javanew.jpeg" alt="java">
+               <div class="card-body">
+                 <h4 class="card-title">Java</h4>
+                 <h6 class="card-subtitle mb-2 text-muted"></h6>
+                 <p class="card-text">Learn Java course by clicking on go </p>
+                 <br><br>
+                 <a href="#" class="card-link">Go</a>
+             
+                 <a href="#" class="card-link">Like</a>
+               </div>
+           </div>
+       </div>
+        
+
+       
+
+       <div id="pad" class="col-12 col-sm-8 col-md-6 col-lg-4">
+        <div class="card" >
+          <img class="card-img-top img-fluid"  src="/images/pythohnew.jpeg" alt="Python">
+           <div class="card-body">
+             <h4 class="card-title">Python</h4>
+             <h6 class="card-subtitle mb-2 text-muted"></h6>
+             <p class="card-text">Learn Python course by clicking on go </p>
+             <br><br>
+             <a href="#" class="card-link">Go</a>
+         
+             <a href="#" class="card-link">Like</a>
+           </div>
+       </div>
+   </div>
+
+    </div>
+
+<br><br><br><br><br>
+
+
+
+
+</body>
+</html>
